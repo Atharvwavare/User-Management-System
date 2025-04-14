@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+
+#frm{
+width: 500px;
+margin: auto;
+margin-top: 50px;
+}
+#frm:hover{
+transform:scale(1.02);
+}
+
+marquee{
+margin-top: 20px;
+}
+.btn1{
+display: flex;
+align-items: ceter;
+margin-left: 100px;
+font-family: sans-serif;
+}
+.btn2{
+align-items: ceter;
+font-family: sans-serif;
+}
+
+.content{
+padding-left: 100px;
+font-family: sans-serif;
+font-size: 300;
+}
+</style>
+</head>
+<body class="container-fluid">
+
+<marquee class="text-primary"> <h1>Register Here!!!</h1></marquee>
+
+		<form action="register" method="post" class="form card" id="frm">
+		<h2 class="bg-danger text-white card-header" style="padding-left: 120px;">Registration Form</h2>
+	
+		<table class="table table-hover">
+		
+		<tr>
+		<td class="content">Name</td>
+		<td><input type="text" name="Username" required></td>
+		</tr>
+		
+		
+		<tr>
+		<td  class="content">Email</td>
+		<td><input type="email" name="email" required></td>
+		</tr>
+		
+		<tr>
+		<td  class="content">Mobile</td>
+		<td><input type="text" name="mobile" required></td>
+		</tr>
+		
+		<tr>
+		<td  class="content">DOB</td>
+		<td><input type="date" name="dob" required></td>
+		</tr>
+		
+		<tr>
+		<td  class="content">City</td>
+		<td><select name="city">
+		<option value="pune">Pune</option>
+		<option value="mumbai">Mumbai</option>
+		<option value="delhi">Delhi</option>
+		<option value="hyderabad">Hyderabad</option>
+		</select></td>
+		</tr>
+		
+		<tr>
+		<td class="content">Gender</td>
+		<td>
+		<input type="radio" name="gender" value="male">Male &nbsp;
+		<input type="radio" name="gender" value="female">Female
+		</td>
+		</tr>
+		
+		<tr class="card-footer" style="align-text: center;">
+		<td class="btn1"><button type="submit" class="btn btn-success " >Register</button></td>
+		<td class="btn2"><button type="reset" class="btn btn-danger">Cancel</button></td>
+		</tr>
+		
+		
+		</table>
+		  <button class="btn btn-light d-grid gap-2 d-md-block"><a href="showdata">Show Users</a></button>
+   
+		
+		</form>
+</body>
+</html>
